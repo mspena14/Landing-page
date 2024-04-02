@@ -1,31 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
-@font-face {
-    font-family: 'magic_school_oneregular';
-    src: url('magicschoolone-webfont.woff2') format('woff2'),
-         url('magicschoolone-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'magic_school_tworegular';
-    src: url('magicschooltwo-webfont.woff2') format('woff2'),
-         url('magicschooltwo-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-.benne-regular {
-    font-family: "Benne", serif;
+.caveat {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
-  
-html {
-    font-family: 'magic_school_oneregular','magic_school_tworegular';
+
+.dancing-script-body{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
+
+ body {
+    font-family: "Caveat", cursive;
+ }
