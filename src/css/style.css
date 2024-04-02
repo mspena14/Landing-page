@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+
+@font-face {
+    font-family: 'magic_school_oneregular';
+    src: url('magicschoolone-webfont.woff2') format('woff2'),
+         url('magicschoolone-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'magic_school_tworegular';
+    src: url('magicschooltwo-webfont.woff2') format('woff2'),
+         url('magicschooltwo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.benne-regular {
+    font-family: "Benne", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+html {
+    font-family: 'magic_school_oneregular','magic_school_tworegular';
+}
