@@ -17,7 +17,6 @@
 .caveat {
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
   }
 
@@ -29,7 +28,6 @@
 
  html {
     font-family: "Caveat", cursive;
-    font-weight: 700;
     font-style: normal;
  }
 
@@ -47,8 +45,9 @@ body {
     height: 100px;
     background-color:var(--color-medio) ;
     color: var(--color-fondo);
-    border: 5px solid var(--color-oscuro);
+    border: 0.2rem solid var(--color-oscuro);
     padding: 15px 30px;
+    z-index: 99;
  }
 
 .header h1 {
@@ -64,21 +63,23 @@ body {
  .nav-bar a {
     text-decoration: none;
     color: var(--color-fondo);
-    font-size:2rem;
+    font-size:2.1rem;
+    font-weight: 900;
+    
  }
 
  .seccion-libros {
     padding: 4rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 4.8rem;
     justify-content: center;
     align-items: center;
  }
 
  .seccion-libros img {
-    width: 350px;
-    height: 500px;
+    width: 22.1rem;
+    height: 31rem;
  }
 
  .card-libro {
@@ -86,16 +87,47 @@ body {
     border: 0.5rem solid var(--color-intenso);
  }
 
- .portada-libro-legado img{
-    width: 300px;
-    height: 450px;
-    margin: 1.5rem; 
- }
 
- .portada-libro-legado{
-border-bottom: 0.2rem solid var(--color-intenso);
- }
  .lista-datos-libro {
     padding: 1rem 0.5rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    list-style: none;
  }
+
+ 
+ .lista-datos-libro li{
+   padding-left: 1.1rem; /* Espacio a la izquierda para la imagen de la viñeta */
+   position: relative; /* Establecer la posición relativa para los elementos de la lista */
+   margin-bottom: 0.5rem; /* Espacio entre elementos de la lista */
+ }
+
+
+ .lista-datos-libro li::before {
+   content: ""; /* Agregar contenido antes de cada elemento de la lista */
+   background-image: url(https://cdn.icon-icons.com/icons2/1352/PNG/512/if-06-harry-potter-colour-sorting-hat-2730319_88134.png); /* URL de la imagen que deseas usar como viñeta */
+   background-size: cover; /* Ajustar el tamaño de la imagen para cubrir completamente */
+   width: 1rem; /* Ancho de la imagen */
+   height: 1rem; /* Altura de la imagen */
+   position: absolute; /* Establecer la posición absoluta para la imagen de la viñeta */
+   left: 0; /* Posición a la izquierda del elemento de la lista */
+   top: 50%; /* Centrar verticalmente la imagen */
+   transform: translateY(-50%); /* Ajustar verticalmente la imagen */
+ }
+
+ .datos {
+   font-weight: bolder;
+   font-size: 1.2rem;
+   color: var(--color-oscuro);
+   font-weight: 900;
+   margin-right: 0.1rem;
+ }
+
+ .seccion-peliculas {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 4rem 3rem;
+   justify-content: center;
+   
+}
