@@ -5,40 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Descubre nuestra amplía variedad de películas, con los más recientes estrenos que incluyen todos los géneros. ¿Qué estás esperando? ¡Ven por tus boletas YA! " />
+        content="Sumérgete en el mágico mundo de Harry Potter con nuestra colección de libros, trailers de películas y debates en nuestro foro. Descubre la magia de Hogwarts, las aventuras de Harry, Hermione y Ron, y enfréntate al poderoso Voldemort en esta experiencia única para los fanáticos de la saga." />
     <meta name="keywords"
-        content="Películas, Arácnidos, Imaginatorio, king, kong, Van, Helsing, Jujutsu, Kaisen, jueguete, diabólico, simios, planeta, Avatar, Cartelera, Cine, Estrenos, Proyecciones, Horarios, Taquilla, Reservas, Géneros, Críticas, Luca, Godzilla, ">
+        content="Hogwarts, Harry Potter, Hermione Granger, Ron Weasley, Voldemort, Gryffindor, Slytherin, Hufflepuff, Ravenclaw, Magia, Varitas, Profesores, Quidditch, Expelliarmus, Patronus, Horrocrux, El Profeta, Reliquias de la Muerte, El Caldero Chorreante, Dumbledore ">
     <meta name="sitedomain" content="https://example.com/" />
-    <meta name="organization" content="Riwi" />
+    <meta name="organization" content="RIWI_DELL" />
     <meta name="author" content="Marlon Stiven Peña Naranjo" />
     <meta name="designer" content="Marlon Stiven Peña Naranjo" />
-    <meta name="copyright" content="© 2024 Cine Riwi. Todos los derechos reservados">
+    <meta name="copyright" content="© 2024 HarryPotterFanPage. Todos los derechos reservados">
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <meta name="revisit-after" content="15days" />
-    <title>Harry Potter informativo</title>
+    <title>Portal Potter</title>
     <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="shortcut icon" href="https://clipart-library.com/new_gallery/harry-potter-clip-art-12.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://clipart-library.com/new_gallery/harry-potter-clip-art-12.png"
+        type="image/x-icon">
 </head>
 
 <body>
+    <!-- Creamos el header -->
     <header class="header">
-        <h1>Harry Potter fan page</h1>
+        <a href="#inicio">
+            <h1>Portal Potter: Todo sobre los Libros y Películas</h1>
+        </a>
         <nav class="nav-bar">
-
-            <a href="/"><span><i class="bi bi-house-fill"></i></span>Inicio</a>
+            <a href="#inicio"><span><i class="bi bi-house-fill"></i></span>Inicio</a>
             <a href="#libros"><span><i class="bi bi-book-fill"></i></span>Libros</a>
             <a href="#peliculas"><span><i class="bi bi-film"></i></span>Películas</a>
-            <a href="#extras">Extras</a>
+            <a href="#foro"><span><i class="bi bi-chat-right-dots-fill"></i></span>Foro</a>
         </nav>
     </header>
-    
-    <main>
+
+    <!-- Creamos el main, contenedor principal de la info de la página -->
+
+    <main class="main">
+
+        <!-- Asignamos nuestra primera sección, bienvenida -->
+
+        <section class="inicio" id="inicio">
+            <article class="bienvenida">
+                <p>
+                    ¡Bienvenidos al mundo mágico de Harry Potter!
+
+                    En nuestra página, encontrarás un portal hacia la magia con acceso a los libros que marcaron una
+                    generación, emocionantes trailers de películas que te transportarán a Hogwarts y más allá, y un
+                    vibrante foro donde podrás compartir tus teorías, debatir sobre tus personajes favoritos y
+                    conectarte con otros fans de la saga.
+
+                    ¡Explora, descubre y déjate llevar por la magia de Harry Potter en nuestra página!</p>
+            </article>
+        </section>
+
+        <!-- Asignamos nuestra segunda sección, libros -->
+
         <section class="seccion-libros" id="libros">
             <h2 class="titulo-sec">Libros</h2>
             <article class="card-libro">
                 <figure class="portada-libro"><img src="https://imagessl2.casadellibro.com/a/l/s7/52/9788478884452.webp"
                         alt="Portada Harry Potter y la Piedra Filosofal"></figure>
+                <div class="descripcion">
+                    <p>
+                        Harry Potter nunca ha oído hablar de Hogwarts hasta que empiezan a caer cartas en el felpudo del
+                        número 4 de Privet Drive. Llevan la dirección escrita con tinta verde en un sobre de pergamino
+                        amarillento con un sello de lacre púrpura, y sus horripilantes tíos se apresuran a confiscarlas.
+                        Más tarde, el día que Harry cumple once años, Rubeus Hagrid, un hombre gigantesco cuyos ojos
+                        brillan como escarabajos negros, irrumpe con una noticia extraordinaria: Harry Potter es un
+                        mago, y le han concedido una plaza en el Colegio Hogwarts de Magia y Hechicería. ¡Está a punto
+                        de comenzar una aventura increíble!
+                    </p>
+                </div>
                 <ul class="lista-datos-libro">
                     <li><span class="datos">Autor:</span> J.K. Rowling</li>
                     <li><span class="datos">Año de publicación:</span> 1997</li>
@@ -49,6 +84,14 @@
             <article class="card-libro">
                 <figure class="portada-libro"><img src="https://imagessl7.casadellibro.com/a/l/s7/57/9788478884957.webp"
                         alt="Portada Harry Potter y la Cámara Secreta"></figure>
+                <div class="descripcion">
+                    <p>El verano de Harry Potter ha incluido el peor cumpleaños de su vida, las funestas advertencias de
+                        un elfo doméstico llamado Dobby y el rescate de casa de los Dursley protagonizado por su amigo
+                        Ron Weasley al volante de un coche mágico volador. De vuelta en el Colegio Hogwarts de Magia y
+                        Hechicería, donde va a empezar su segundo curso, Harry oye unos extraños susurros que resuenan
+                        por los pasillos vacíos. Y entonces empiezan los ataques y varios alumnos aparecen
+                        petrificados... Por lo visto, las siniestras predicciones de Dobby se están cumpliendo....</p>
+                </div>
                 <ul class="lista-datos-libro">
                     <li><span class="datos">Autor:</span> J.K. Rowling</li>
                     <li><span class="datos">Año de publicación:</span> 1998</li>
@@ -59,6 +102,14 @@
             <article class="card-libro">
                 <figure class="portada-libro"><img src="https://imagessl0.casadellibro.com/a/l/s7/90/9788478885190.webp"
                         alt="Portada Harry Potter y el Prisionero de Azkaban"></figure>
+                <div class="descripcion">
+                    <p>Cuando el autobús noctámbulo irrumpe en una calle oscura y frena con fuertes chirridos delante de
+                        Harry, comienza para el un nuevo curso en Hogwarts, lleno de acontecimientos extraordinarios.
+                        Sirius Black, asesino y seguidor de lord Voldemort, se ha fugado, y dicen que va en busca de
+                        Harry. En su primera clase de Adivinación, la profesora Trelawney ve un augurio de muerte en las
+                        hojas de te de la taza de Harry... Pero quizá lo más aterrador sean los dementores que patrullan
+                        por los jardines del colegio, capaces de sorberte el alma con su beso...</p>
+                </div>
                 <ul class="lista-datos-libro">
                     <li><span class="datos">Autor:</span> J.K. Rowling</li>
                     <li><span class="datos">Año de publicación:</span> 1999</li>
@@ -69,6 +120,14 @@
             <article class="card-libro">
                 <figure class="portada-libro"><img src="https://imagessl6.casadellibro.com/a/l/s7/56/9788478886456.webp"
                         alt="Portada Harry Potter y el Cáliz de Fuego"></figure>
+                <div class="descripcion">
+                    <p>Se va a celebrar en Hogwarts el Torneo de los Tres Magos. Sólo los alumnos mayores de diecisiete
+                        años pueden participar en esta competición, pero, aun así, Harry sueña con ganarla. En
+                        Halloween, cuando el cáliz de fuego elige a los campeones, Harry se lleva una sorpresa al ver
+                        que su nombre es uno de los escogidos por el cáliz mágico. Durante el torneo deberá enfrentarse
+                        a desafíos mortales, dragones y magos tenebrosos, pero con la ayuda de Ron y Hermione, sus
+                        mejores amigos, ¡quizá logre salir con vida!</p>
+                </div>
                 <ul class="lista-datos-libro">
                     <li><span class="datos">Autor:</span> J.K. Rowling</li>
                     <li><span class="datos">Año de publicación:</span> 2000</li>
@@ -79,6 +138,14 @@
             <article class="card-libro">
                 <figure class="portada-libro"><img src="https://imagessl2.casadellibro.com/a/l/s7/22/9788478887422.webp"
                         alt="Portada Harry Potter y la Orden del Fénix"></figure>
+                <div class="descripcion">
+                    <p>Son malos tiempos para Hogwarts. Tras el ataque de los dementores a su primo Dudley, Harry Potter
+                        comprende que Voldemort no se detendrá ante nada para encontrarlo. Muchos niegan que el Señor
+                        Tenebroso haya regresado, pero Harry no está solo: una orden secreta se reúne en Grimmauld Place
+                        para luchar contra las fuerzas oscuras. Harry debe permitir que el profesor Snape le enseñe a
+                        protegerse de las brutales incursiones de Voldemort en su mente. Pero éstas son cada vez más
+                        potentes, y a Harry se le está agotando el tiempo...</p>
+                </div>
                 <ul class="lista-datos-libro">
                     <li><span class="datos">Autor:</span> J.K. Rowling</li>
                     <li><span class="datos">Año de publicación:</span> 2003</li>
@@ -89,6 +156,15 @@
             <article class="card-libro">
                 <figure class="portada-libro"><img src="https://imagessl7.casadellibro.com/a/l/s7/07/9788478889907.webp"
                         alt="Harry Potter y el Misterio del Príncipe"></figure>
+                <div class="descripcion">
+                    <p>
+                        Harry, de dieciséis años, enfrenta el sexto año en Hogwarts en medio de eventos turbulentos en
+                        Inglaterra. Como capitán del equipo de quidditch, los ensayos, exámenes y relaciones ocupan su
+                        tiempo, pero la calma es efímera. A pesar de la seguridad en Hogwarts, dos alumnos son atacados
+                        brutalmente, señalando un inminente enfrentamiento entre Harry y Voldemort según una profecía.
+                        Dumbledore busca la ayuda de Harry y juntos emprenden viajes peligrosos para debilitar al
+                        enemigo, utilizando un antiguo libro de pociones del "Príncipe Mestizo".</p>
+                </div>
                 <ul class="lista-datos-libro">
                     <li><span class="datos">Autor:</span> J.K. Rowling</li>
                     <li><span class="datos">Año de publicación:</span> 2005</li>
@@ -99,6 +175,14 @@
             <article class="card-libro">
                 <figure class="portada-libro"><img src="https://imagessl5.casadellibro.com/a/l/s7/05/9788498381405.webp"
                         alt="Portada Harry Potter y las Reliquias de la Muerte"></figure>
+                <div class="descripcion">
+                    <p>Cuando se monta en el sidecar de la moto de Hagrid y se eleva en el cielo, dejando Privet Drive
+                        por última vez, Harry Potter sabe que lord Voldemort y sus mortífagos se hallan cerca. El
+                        encantamiento protector que había mantenido a salvo a Harry se ha roto, pero el no puede seguir
+                        escondiendose. El Señor Tenebroso se dedica a aterrorizar a todos los seres queridos de Harry,
+                        y, para detenerlo, este habrá de encontrar y destruir los horrocruxes que quedan. La batalla
+                        definitiva debe comenzar: Harry tendrá que alzarse y enfrentarse a su enemigo...</p>
+                </div>
                 <ul class="lista-datos-libro">
                     <li><span class="datos">Autor:</span> J.K. Rowling</li>
                     <li><span class="datos">Año de publicación:</span> 2007</li>
@@ -107,9 +191,17 @@
                 </ul>
             </article>
             <article class="card-libro">
-                <figure class="portada-libro-legado"><img
-                        src="https://imagessl8.casadellibro.com/a/l/s7/38/9788418797538.webp"
-                        alt="Portada Harry Potter y el Legado Maldito"></figure>
+                <figure class="portada-libro"><img src="https://imagessl8.casadellibro.com/a/l/s7/38/9788418797538.webp"
+                        alt="Portada Harry Potter y el Legado Maldito" width="358.4" height="512"></figure>
+                <div class="descripcion">
+                    <p>Ser Harry Potter nunca ha sido tarea fácil, menos aún desde que se ha convertido en un
+                        ocupadísimo empleado del Ministerio de Magia, un hombre casado y padre de tres hijos.
+
+                        Mientras Harry planta cara a un pasado que se resiste a quedar atrás, su hijo menor, Albus, ha
+                        de luchar contra el peso de una herencia familiar de la que el nunca ha querido saber nada.
+                        Cuando el destino conecte el pasado con el presente, padre e hijo deberán afrontar una verdad
+                        muy incómoda: a veces, la oscuridad surge de los lugares más insospechados.</p>
+                </div>
                 <ul class="lista-datos-libro">
                     <li><span class="datos">Autor:</span> J.K. Rowling, John Tiffany y Jack Thorne</li>
                     <li><span class="datos">Año de publicación:</span> 2016</li>
@@ -118,6 +210,9 @@
                 </ul>
             </article>
         </section>
+
+        <!-- Asignamos nuestra tercera sección, peliculas -->
+
         <section class="seccion-peliculas" id="peliculas">
             <h2 class="titulo-sec">Películas</h2>
             <article class="card-vid">
@@ -211,82 +306,62 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </article>
         </section>
-        <section class="seccion-extras" id="extras">
-            <article class="card">
-                <figure class="portada"></figure>
-                <ul class="lista-datos">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+
+        <!-- Asignamos nuestra cuarta sección, foro, usamos un fieldset ya que tendremos un formulario -->
+
+        <h2 class="titulo-sec-foro" id="foro">Foro</h2>
+        <fieldset class="seccion-foro">
+            <article class="sec-foro-cont">
+                <div class="redes">
+                    <h3>Foro</h3>
+                    <p>
+                        ¡Amantes de la magia!
+
+                        Únete a mi foro de Harry Potter para discutir sobre libros, películas, teorías y más.
+                        ¡Todos son bienvenidos! Regístrate ahora y únete a la diversión mágica.
+
+                        ¡Te espero en el foro!</p>
+                    <h3>Mis redes</h3>
+                    <div class="i">
+                        <a href="https://wa.me/573194746457?text=Hola%20vengo%20de%20tu%20landing%20page"
+                            target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/marlon01naranjo/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/marlon.pena.3114?locale=es_LA" target="_blank"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <form action="Gracias por su mensaje" method="post" class="form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="nombre" class="info" placeholder="Ingresa tu nombre..." />
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="correo" placeholder="example@email.com" />
+                    <label for="msg">Mensaje:</label>
+                    <textarea id="msg" name="mensaje" placeholder="Escribe tu aporte al foro..."></textarea>
+                    <input type="submit" name="enviar" value="Enviar mensaje" class="submit">
+                </form>
             </article>
-            <article class="card">
-                <figure class="portada"></figure>
-                <ul class="lista-datos">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </article>
-            <article class="card">
-                <figure class="portada"></figure>
-                <ul class="lista-datos">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </article>
-            <article class="card">
-                <figure class="portada"></figure>
-                <ul class="lista-datos">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </article>
-            <article class="card">
-                <figure class="portada"></figure>
-                <ul class="lista-datos">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </article>
-            <article class="card">
-                <figure class="portada"></figure>
-                <ul class="lista-datos">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </article>
-            <article class="card">
-                <figure class="portada"></figure>
-                <ul class="lista-datos">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </article>
-        </section>
+        </fieldset>
     </main>
-    <footer>
-        <a href="mailto:elcorreoquequieres@correo.com"><i class="bi bi-envelope-fill"></i></a>
-        <span>© 2024 EcoMedellín. Todos los derechos reservados</span>
+
+    <!-- Creamos el footer -->
+
+    <footer class="footer">
+        <div class="cont-map-mail">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3378179448387!2d-75.58618982595597!3d6.219106326627733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f0e114eef%3A0x99610cdd44c7c081!2sRiwi%20-%20Be%20a%20Coder!5e0!3m2!1ses!2sco!4v1712393805977!5m2!1ses!2sco"
+                width="300" height="200" s tyle="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul>
+                <li><a href="mailto:marlono1naranjo@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
+                <li><a href="https://riwi.io/" target="_blank"><img
+                            src="https://moodle.riwi.io/pluginfile.php/1/theme_academi/logo/1712127848/Imagen1%20%281%29.png"
+                            alt="Logo Riwi"></a></li>
+                <li><a href="https://github.com/mspena14/Landing-page.git" target="_blank"><i
+                            class="bi bi-github"></i></a></li>
+            </ul>
+        </div>
+        <span class="copy">© 2024 PortalPotter. Todos los derechos reservados</span>
     </footer>
 </body>
 
