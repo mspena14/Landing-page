@@ -21,6 +21,7 @@
    --color-oscuro: #734E38;
    --color-intenso: #A64F3C;
    --color-blanco: white;
+   --efecto-hover: 1px 0px 10px rgba(242, 223, 201, 1);
 }
 
 /* Asignamos fuente importada a todo nuestro HTML */
@@ -73,6 +74,9 @@ body {
    color: var(--color-fondo);
 }
 
+.header a:hover {
+   text-shadow: var(--efecto-hover);
+}
 .nav-bar {
    display: flex;
    justify-content: end;
@@ -105,10 +109,14 @@ body {
 
 .bienvenida {
    width: 65%;
-   color: white;
+   color: var(--color-blanco);
    font-size: 2.5rem;
    font-weight: 900;
    text-decoration: underline;
+}
+
+.bienvenida:hover {
+   text-shadow: var(--efecto-hover);
 }
 
 /* estilos segunda sección */
@@ -164,7 +172,7 @@ body {
 .descripcion p {
    font-size: 1.45rem;
    line-height: 1;
-   color: white;
+   color: var(--color-blanco);
    font-weight: 900;
    transform: translateY(300%);
    display: none;
@@ -282,6 +290,15 @@ body {
    margin-bottom: 10rem;
 }
 
+.titulo-sec:hover {
+   text-shadow: var(--efecto-hover);
+}
+
+.titulo-sec-foro:hover {
+   text-shadow: var(--efecto-hover);
+}
+
+
 /* estilos cuarta sección */
 
 .seccion-foro {
@@ -291,7 +308,7 @@ body {
    width: 55%;
    height: 30rem;
    background-color: var(--color-medio);
-   color: white;
+   color: var(--color-blanco);
    border-radius: 0.3rem;
    padding: 2rem 4rem;
 }
@@ -379,6 +396,11 @@ body {
    color: var(--color-fondo);
 }
 
+.redes i:hover {
+   text-shadow: var(--efecto-hover);
+ }
+
+ 
 /* estilos footer */
 
 .footer {
