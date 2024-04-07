@@ -274,10 +274,13 @@ body {
    font-size: 2.5rem;
    color: var(--color-fondo);
    font-weight: 700;
+   position: sticky;
+   top: 6.5rem;
+   z-index: 99;
 }
 
 .titulo-sec-foro {
-   scroll-margin-top: 6.25rem;
+   scroll-margin-top: 6rem;
    padding: 1rem;
    background-color: var(--color-medio);
    width: 100%;
@@ -288,6 +291,9 @@ body {
    font-weight: 700;
    margin: 5rem 0;
    margin-bottom: 10rem;
+   position: sticky;
+   top: 6.5rem;
+   z-index: 99;
 }
 
 .titulo-sec:hover {
@@ -311,6 +317,7 @@ body {
    color: var(--color-blanco);
    border-radius: 0.3rem;
    padding: 2rem 4rem;
+   
 }
 
 .sec-foro-cont {
@@ -325,6 +332,7 @@ body {
    font-size: 1.5rem;
    font-weight: 900;
    margin-bottom: 10rem;
+   z-index: 50;
 }
 
 .seccion-foro .form {
